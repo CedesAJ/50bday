@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Bday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+section{
+   width: 100%;
+   height: 100%;
+   background-image: url("rose.png");
+   padding: 30px;
+}
+
+.login-form{
+  margin: auto;
+  margin-top: 60px;
+  width: 40%;
+  border: 3px solid black;
+  background-color: white; 
+  padding: 20px;
+}
+.username-input, .password-input, h4{
+  margin-top:5px;
+}
+</style>
+
+
+<body>
+ <section>
+  <div class="login-form">
+   <h4>Username</h4>
+   <div class="username-input">
+     <input type="email" placeholder="Username" id="username"
+   </div>
+   <h4>Password</h4>
+   <div class="password-input">
+     <input type="password" placeholder="password" id="password"
+   </div>
+  </div>
+  <button class="login-btn" onclick="func()">LOGIN</button>
+
+<script>
+function func(){
+ var email = document.getElementById('username').value;
+ var pass = document.getElementById('password').value;
+ if(email == 'kaho' && pass == 'trip4mom'){
+  window.location.assign("trip.html")
+ }
+ else {
+ alert("Access denied!")
+ }
+}
+</script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>	
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									    
+</body>
+</html>
